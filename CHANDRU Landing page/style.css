@@ -1,0 +1,183 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #222;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff9800;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9800;
+}
+
+/* Header */
+header {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+              url("https://via.placeholder.com/1500x600") no-repeat center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: #ff9800;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e68900;
+}
+
+/* Section General */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+section p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Services */
+.service-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.box {
+  background: #fff;
+  padding: 25px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-8px);
+}
+
+.box img {
+  margin-bottom: 15px;
+}
+
+.box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ff9800;
+}
+
+.box p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Contact */
+#contact p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .header-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .service-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
